@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Open Rails Telemetry</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+
+<body>
+    <header>
+        <h1>Open Rails Telemetry</h1>
+        <nav>
+            <ul>
+                <li><a asp-area="" asp-page="/Index">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        Open Rails Telemetry - <a href="https://www.elvastower.com/forums/index.php?/topic/37702-opt-in-anonymous-telemetry/">About</a> - <a href="https://github.com/openrails/telemetry">Source Code</a>
+    </footer>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
