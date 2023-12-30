@@ -7,4 +7,10 @@
     <RootNamespace>Open_Rails_Telemetry</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Include="openrails-telemetry.service">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
