@@ -1,0 +1,14 @@
+[Unit]
+Description=Open Rails Telemetry service
+
+[Service]
+WorkingDirectory=/var/aspnetcore/openrails-telemetry
+ExecStart=/usr/bin/dotnet "/var/aspnetcore/openrails-telemetry/Open Rails Telemetry.dll"
+Restart=always
+RestartSec=10
+SyslogIdentifier=aspnet-openrails-telemetry
+User=openrails
+Environment=ASPNETCORE_ENVIRONMENT=Production ASPNETCORE_URLS=http://127.0.0.1:5001
+
+[Install]
+WantedBy=multi-user.target
