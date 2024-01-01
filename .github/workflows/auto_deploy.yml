@@ -26,4 +26,4 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: ${{ secrets.REMOTE_TARGET }}
           SCRIPT_AFTER: |
-            sudo systemctl restart openrails-telemetry.service
+            sudo systemctl restart telemetry.openrails.org.service
