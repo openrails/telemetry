@@ -2,8 +2,8 @@
 Description=Open Rails Telemetry service
 
 [Service]
-WorkingDirectory=/var/dotnet/telemetry.openrails.org
-ExecStart=/usr/bin/dotnet "/var/dotnet/telemetry.openrails.org/Open Rails Telemetry.dll"
+WorkingDirectory=/opt/telemetry.openrails.org
+ExecStart=/usr/bin/dotnet "/opt/telemetry.openrails.org/Open Rails Telemetry.dll"
 Restart=always
 RestartSec=10
 SyslogIdentifier=dotnet-telemetry.openrails.org
